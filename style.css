@@ -1,0 +1,28 @@
+.demo-grid{
+	height:800px;
+	background-color:#116466;	
+	font-family:Square Peg;
+	text-align:center;
+	color:white;
+	font-size:90px;
+	line-height:500px;
+}
+
+.demo-grid2{
+	background-color:#D1E8E2;
+	text-align:center;	
+}
+
+.demo-grid2 p{
+	position:absolute;
+	top:40%;	
+}
+
+.menu{
+	background-color:#D1E8E2;
+}
+
+.navbar-nav{
+	padding:5px;
+	margin:5px;	
+}
