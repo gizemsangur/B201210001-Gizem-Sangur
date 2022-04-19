@@ -13,23 +13,57 @@
    
     <script>
 	function validateForm(){
-	var x=document.forms["formiletisim"]["namesurname"].value;
-	if(x==null||x==""){
-		alert("Lütfen adınızı ve soyadınızı giriniz.");
+		var x=document.forms["formiletisim"]["namesurname"].value;
+		if(x==null||x==""){
+			alert("Lütfen adınızı ve soyadınızı giriniz.");
 		
-	}
-	var y=document.forms["formiletisim"]["mail"].value;
-	if(y==null||y==""){
-		alert("Lütfen e-mail adresinizi Giriniz");
+		}
+		var y=document.forms["formiletisim"]["mail"].value;
+		if(y==null||y==""){
+			alert("Lütfen e-mail adresinizi Giriniz");
 		
-	}	
-	var z=document.forms["formiletisim"]["message"].value;
-	if(z==null||z==""){
-		alert("Lütfen iletmek istediğiniz mesajı giriniz.");
-		return false;
-	}
+		}
+		var z=document.forms["formiletisim"]["message"].value;
+			if(z==null||z==""){
+			alert("Lütfen iletmek istediğiniz mesajı giriniz.");
+			return false;
+		}
+		
    }
-   </script>
+	</script>
+	
+	<script>
+		function checkEmail() {
+			var x=document.forms["formiletisim"]["namesurname"].value;
+			var y=document.forms["formiletisim"]["mail"].value;
+			var z=document.forms["formiletisim"]["message"].value;
+			var mail = document.getElementById('formGroupExampleInput2');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;	
+			if(x==null||x==""){
+				alert("Lütfen adınızı ve soyadınızı giriniz.");
+		
+			}			
+			if(y==null||y==""){
+				alert("Lütfen e-mail adresinizi Giriniz");
+		
+			}			
+			if(z==null||z==""){
+				alert("Lütfen iletmek istediğiniz mesajı giriniz.");
+				
+			}								
+			else
+			{
+				if (!filter.test(mail.value)) {
+					alert('Lütfen geçerli bir e-mail adresi giriniz.');
+					email.focus;
+					return false;
+				}
+			}
+			
+		}
+
+	
+	</script>
   </head>
   <body>  
 	<!-- SAYFANIN MENÜSÜ İÇİN GRID YAPISINI OLUŞTURMA -->
@@ -42,7 +76,7 @@
 						<a class="nav-link active"  href="hakkımda.html">Hakkımda</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="özgeçmiş.html">Özgeçmiş</a>
+						<a class="nav-link"  href="özgeçmiş.html">Özgeçmiş</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
@@ -54,7 +88,7 @@
 						<a class="nav-link" href="mirasımız.html">Mirasımız</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="iletisim.html">İletişim</a>
+						<a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
 					</li> 
 					<li class="nav-item kayıt">
 						<a class="nav-link" href="giris.html">Giriş Yap</a>
@@ -72,7 +106,7 @@
 				<p>İletişim</p>
 			</div>
 			<div class="col-7 demo-grid2" >
-			<form class="iletisimform" name="formiletisim" action="iletisim.php" onsubmit="return validateForm()" method="post">
+			<form class="iletisimform" name="formiletisim" action="#"  method="post">
 			
 				<div class="mb-4">
 					<label for="formGroupExampleInput" class="form-label">Adınız Soyadınız</label>
@@ -85,7 +119,7 @@
 					<label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label>
 					 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="İletmek istediğiniz mesajınızı giriniz." name="message"></textarea>
 				</div>
-				<input class="btn btn-primary" type="submit" value="Submit" style="background-color:#116466">
+				<input class="btn btn-primary" type="submit" value="Submit" style="background-color:#116466" onclick="checkEmail()">
 				<input class="btn btn-primary" type="reset" value="Reset" style="background-color:#116466">
 			</form>
 			</div>

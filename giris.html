@@ -8,19 +8,31 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Updock&display=swap" rel="stylesheet">
-	    <script>
-	function validateForm(){
-	var x=document.forms["formgiris"]["mail"].value;
-	if(x==null||x==""){
-		alert("Lütfen e-mail adresinizi giriniz.")
-	}
-	var y=document.forms["formgiris"]["password"].value;
-	if(y==null||y==""){
-		alert("Lütfen şifrenizi Giriniz");
-		return false;
-	}	
-   }
-   </script>
+	    
+	<script>
+		function checkEmail() {
+			var x=document.forms["formgiris"]["mail"].value;
+			var y=document.forms["formgiris"]["password"].value;
+			var mail = document.getElementById('formGroupExampleInput2');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if(x==null||x==""){
+				alert("Lütfen e-mail adresinizi giriniz.");	
+				
+			if(y==null||y==""){
+				alert("Lütfen şifrenizi giriniz.")
+			}
+			}else
+			{
+				if (!filter.test(x.value)) {
+					alert('Lütfen geçerli bir e-mail adresi giriniz.');
+					mail.focus;
+					return false;
+				}
+			}
+			
+		}
+	
+	</script>
 
 	<script type="text/javascript" src="js/bootstrap.js"></script>
    
@@ -36,7 +48,7 @@
 						<a class="nav-link active"  href="hakkımda.html">Hakkımda</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="özgeçmiş.html">Özgeçmiş</a>
+						<a class="nav-link"  href="özgeçmiş.html">Özgeçmiş</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
@@ -51,7 +63,7 @@
 						<a class="nav-link" href="iletisim.html">İletişim</a>
 					</li> 
 					<li class="nav-item kayıt">
-						<a class="nav-link" href="giris.html">Giriş Yap</a>
+						<a class="nav-link" aria-current="page" href="giris.html">Giriş Yap</a>
 					</li>
 				</ul>
 				
@@ -66,7 +78,7 @@
 				<p>Giriş Yap</p>
 			</div>
 			<div class="col-7 demo-grid2" >
-					<form class="girisform" name="formgiris" action="giris.php" onsubmit="return validateForm()" method="post">
+					<form class="girisform" name="formgiris" action="giris.php" method="post">
 						<div class="mb-4">
 							<label for="formGroupExampleInput2" class="form-label">Email</label>
 							<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email adresinizi giriniz" name="mail">
@@ -75,7 +87,7 @@
 							<label for="formGroupExampleInput2" class="form-label">Password</label>
 							<input type="password" class="form-control" id="inputPassword4" placeholder="Şifrenizi giriniz" name="password">
 						</div>
-							<input class="btn btn-primary" type="submit" value="Submit" style="background-color:#116466">
+							<input class="btn btn-primary" type="submit" value="Submit" style="background-color:#116466" onclick="return checkEmail()">
 							
 					</form>					
 			</div>
