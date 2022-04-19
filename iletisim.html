@@ -15,16 +15,18 @@
 	function validateForm(){
 	var x=document.forms["formiletisim"]["namesurname"].value;
 	if(x==null||x==""){
-		alert("Lütfen adınızı ve soyadınızı giriniz.")
+		alert("Lütfen adınızı ve soyadınızı giriniz.");
+		
 	}
 	var y=document.forms["formiletisim"]["mail"].value;
 	if(y==null||y==""){
 		alert("Lütfen e-mail adresinizi Giriniz");
-		return false;
+		
 	}	
 	var z=document.forms["formiletisim"]["message"].value;
 	if(z==null||z==""){
-		alert("Lütfen iletmek istediğiniz mesajı giriniz.")
+		alert("Lütfen iletmek istediğiniz mesajı giriniz.");
+		return false;
 	}
    }
    </script>
@@ -70,7 +72,7 @@
 				<p>İletişim</p>
 			</div>
 			<div class="col-7 demo-grid2" >
-			<form class="iletisimform" name="formiletisim" action="demoform.php" onsubmit="return validateForm()" method="post">
+			<form class="iletisimform" name="formiletisim" action="iletisim.php" onsubmit="return validateForm()" method="post">
 			
 				<div class="mb-4">
 					<label for="formGroupExampleInput" class="form-label">Adınız Soyadınız</label>
