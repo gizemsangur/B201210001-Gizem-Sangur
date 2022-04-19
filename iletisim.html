@@ -9,10 +9,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!--<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">-->
 	<link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Updock&display=swap" rel="stylesheet">
-	
-
 	<script type="text/javascript" src="js/bootstrap.js"></script>
    
+    <script>
+	function validateForm(){
+	var x=document.forms["formiletisim"]["namesurname"].value;
+	if(x==null||x==""){
+		alert("Lütfen adınızı ve soyadınızı giriniz.")
+	}
+	var y=document.forms["formiletisim"]["mail"].value;
+	if(y==null||y==""){
+		alert("Lütfen e-mail adresinizi Giriniz");
+		return false;
+	}	
+	var z=document.forms["formiletisim"]["message"].value;
+	if(z==null||z==""){
+		alert("Lütfen iletmek istediğiniz mesajı giriniz.")
+	}
+   }
+   </script>
   </head>
   <body>  
 	<!-- SAYFANIN MENÜSÜ İÇİN GRID YAPISINI OLUŞTURMA -->
@@ -55,8 +70,21 @@
 				<p>İletişim</p>
 			</div>
 			<div class="col-7 demo-grid2" >
-			<form>
+			<form class="iletisimform" name="formiletisim" action="demoform.php" onsubmit="return validateForm()" method="post">
 			
+				<div class="mb-4">
+					<label for="formGroupExampleInput" class="form-label">Adınız Soyadınız</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Adınızı Soyadınızı giriniz" name="namesurname">
+				<div class="mb-4">
+					<label for="formGroupExampleInput2" class="form-label">Email</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email adresinizi giriniz" name="mail">
+				</div>
+				<div class="mb-4">
+					<label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label>
+					 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="İletmek istediğiniz mesajınızı giriniz." name="message"></textarea>
+				</div>
+				<input class="btn btn-primary" type="submit" value="Submit" style="background-color:#116466">
+				<input class="btn btn-primary" type="reset" value="Reset" style="background-color:#116466">
 			</form>
 			</div>
 		</div>
