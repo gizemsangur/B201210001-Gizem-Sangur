@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+
+header,footer{
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family: Square Peg;
+	
+}
+.sliding-text{
+	font-size:2.4rem;
+}
+
+nav{
+	display:flex;
+	justify-content:space-between;
+	padding:1rem 5rem;
+	background:white;
+	font-family: Square Peg;
+	
+}
+h2{
+	font-size:5rem;
+}
+ul{
+	display:flex;
+	list-style:none;
+	align-items:center;
+	text-decoration:none;
+	
+}
+a{
+	text-decoration:none;
+	font-size:2rem;
+	color:black;
+	
+	
+}
+.logo{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%) scale(5);
+	font-family: Square Peg;
+}
+
+.yazı{
+	height:100vh;
+	display:flex;
+	align-items:center;
+	font-family: Square Peg;
+	
+}
+
+.yazı h2{
+	transform:translate(-50%,-50%) ;
+	position:relative;
+	text-align:center;
+	font-size:5rem;
+	left:700px;
+
+}
+
+.yazı p{
+	position:relative;
+	text-align:center;
+	font-size:2rem;
+	bottom:50px;
+}
+	
+
+
+.home{
+	height:100vh;
+}
+#progress-bar{
+	position:fixed;
+	top:0;
+	left:0;
+	height:8px;
+	background:linear-gradient(to right,#B7F8DB,#50A7C2);
+	width:0%;
+	z-index:100;
+}
+.row{
+	font-family:Square Peg;
+	font-size:35px;
+}
+
+.animation{
+	height:100vh;
+	background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+	position:relative;
+	overflow:hidden;
+}
+.paper-plane{
+	position:absolute;
+	height:100px;
+	top:50%;
+	left:0%;
+}
+
