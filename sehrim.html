@@ -1,119 +1,241 @@
-<!doctype html>
-<html lang="tr" class="animated fadeIn">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" type="text/css" href="./style2.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!--<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">-->
-	<link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Updock&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-   
-  </head>
-  <body> 
-	<div class="content">
-		<div class="sun">
-		  <div class="shadow"></div>
-		</div>
-	</div>
-	 <div id="progress-bar"></div>
-	<section class="progress-section">
-	<section class="home">
-		<nav>
-			<h1 class="sliding-text">GİZEM ŞANGÜR</h1>
-			<ul>
-				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="hakkımda.html" style="color: black;">Hakkımda</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="özgeçmiş.html" style="color: black;">Özgeçmiş</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="İlgialanlarım.html" style="color: black;">İlgi Alanlarım</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="sehrim.html" style="color: black;">Şehrim</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mirasımız.html" style="color: black;">Mirasımız</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="iletisim.html" style="color: black;">İletişim</a>
-				</li> 
-				<li class="nav-item kayıt">
-					<a class="nav-link" href="giris.html" style="color: black;">Giriş Yap</a>
-				</li>
-			</ul>
-		</nav>
-		<div id="particles-js">
-			<h1 class="logo">Şehrim</h1>
-		</div>
-	</section>	
-	<section class="slider">
-		<div class="col-7">
-			<div class="slider1">
-				<div class="slider-inner">
-					<div class="item">
-				 	 <img class="image" src="./lotr3.png" >
-					</div>
-					<div class="item">
-					  <div class="image"></div>
-					</div>
-					<div class="item">
-					  <div class="image"></div>
-					</div>
-						<div class="item">
-					<div class="image"></div>
-				</div>
-			</div>	
-		</div>
-	</section>	
-	</div>
-	</section>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="layout.scss">
+    <link rel="stylesheet" href="layout.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="progress-bar"></div>
+<section >
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                       
+                    </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link "  href="index.html">Hakkımda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link "    href="özgeçmiş.html">Özgeçmiş</a>  
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sehrim.html">Şehrim</a>  
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="mirasımız.html">Mirasımız</a>  
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="giris.html">Giriş</a>  
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>  
+                      </li>
+                     
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+       
 
-	
+        
+          <div class="row" id="first_section">
+            <div class="col-12" >
+              <div id="particles-js">
+                <p id="first">ŞEHRİM</p> 
+              </div>
+                  
+             </div>
+         </div>
+        
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row" id="city">
+            <div class="col-6 " >
+                  <div id="citytext">
+                      <p>Manisa Ege Bölgesinde yer alan,1.4 milyonluk nüfusu ile Türkiye'deki en kalabalık on dördüncü ildir.
+                          17 ilçesi vardır.</p>
+                       <p>Tarihi kaynaklar bugünkü Yunanistan'ın Tesalya Bölgesi'ndeki Pelion Dağı civarında yaşayan Magnetleri,Manisa'nın Kurucusu olarak göstermektedir.Antik çağdaki adı Magnesia olan Manisa Spil Dağı ile Gediz Nehri arasında bulunur.
+                          Verimli topraklarıyla tarih boyunca pek çok medeniyetin ilgisini çeken Manisa'da Hititler,Frigler,Yunanlar,Lidyalılar,İranlılar,Romalılar,Bizanslılar,Saruhanoğulları ve Osmanlılar hakim olmuştur.</p>
+                       <p>Sardes başta olmak üzere 20'den fazla antik kent mevcuttur.Tarşhte ilk altın parayı basan Lidyalıların başkenti Salihli'deki Sardes Antik Kenti'dir.
+                          Lidyalıların mezarlık alanı olan Lidya tümülüsleri ise dünyanın en büyük tümülüs alanıdır ve Bin Tepeler olarak bilinir.
+                          Osmanlı Döneminde,şehirde yer alan Manisa Sancağı'nın geleceğin papdişahlarına yönetimi öğrenmelerini sağlaması,buranın hala Şehzadeler Şehri olarak anılmasına vesiledir.</p>  
+                  </div>
+                        
+            </div>
+            <div class="col-6 " >
+                  <div id="cityimages">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./sardes.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes2.jpg" class="d-block w-100" alt="https://tr.wikipedia.org/wiki/Sardis#/media/Dosya:Sardis_Synagogue,_late_3rd_century_AD,_Sardis,_Lydia,_Turkey_(18897218314).jpg">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+            </div>  
+          </div>
+          <div class="row" id="city">
+            <div class="col-6 " >
+                  <div id="citytext2">
+                      <p>Manisa Tarzanı olarak bilien Ahmeddin Carlak Kurtuluş Savaşı'nda savaştığı için İstiklal Madalyası sahibidir.</p>
+                       <p>Hayatını Manisayı tüm Türkiyeye örnek olacak şekilde ağaçlandırmaya adamış
+                        ve binlerce ağaç dikmiştir.</p>
+                       <p>Spil dağında yaşayan ve sadece şort ile dolaşan Ahmeddin Carlak Tarzan filmiyle hayatı özdeştirilerek Manisa Tarzanı olarak adlandırılmaya başlanmıştır.</p>  
+                       <p>Manisa'nın ağaç ve yeşilliği ile özdeşleşen Tarzan, Türkiye'deki dağların zirvelerine tırmanmayı tamamlayıp Manisa'ya döndüğünde, kesilmiş ağaçları görünce, "Yokluğumdan yararlanıp ulu çamları kesmişler, evlatlarını kaybetmiş baba gibiyim, göğsüme hançer saplanıyor, dayanamıyorum" diyerek kahroldu. O kadar üzüldü ki kalp spazmı geçirerek hastaneye kaldırıldı. Aşırı efor nedeniyle kalp yetmezliği teşhisi konuldu.</p>
+                       <p> Kendisini daha az yorması önerilse de, o tam iyileşmeden hastaneden çıktığı gibi; kent merkezindeki park içerisine hazırlanmış yeni kulübesi yerine, Spil Dağı eteklerindeki kulübesine yerleşti. Sağlık şartları bakımından tekrar hastaneye kaldırıldığı 31 Mayıs 1963 günü ise hayatını kaybetti.</p>
+                  </div>
+                        
+            </div>
+            <div class="col-6 " >
+                  <div id="cityimages2">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./sardes.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes2.jpg" class="d-block w-100" alt="https://tr.wikipedia.org/wiki/Sardis#/media/Dosya:Sardis_Synagogue,_late_3rd_century_AD,_Sardis,_Lydia,_Turkey_(18897218314).jpg">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+            </div>  
+          </div>
+          <div class="row" id="city">
+            <div class="col-6 " >
+                  <div id="citytext3">
+                      <p>Manisa en fazla tarım alanına sahip onuncu ilimizdir.</p>
+                       <p>Manisa'nın en önemli bitkisel ürünleri: kuru ve yaş üzüm,zeytin,tütün,domates,mısır,kavun,karpuz ve kirazdır.</p>
+                       <p>Kereviz ve karnabahar da en çok Manisa'da yetişir.</p>  
+                  </div>
+                        
+            </div>
+            <div class="col-6 " >
+                  <div id="cityimages3">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./sardes.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes2.jpg" class="d-block w-100" alt="https://tr.wikipedia.org/wiki/Sardis#/media/Dosya:Sardis_Synagogue,_late_3rd_century_AD,_Sardis,_Lydia,_Turkey_(18897218314).jpg">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+            </div>  
+          </div>
+          <div class="row" id="city">
+            <div class="col-6 " >
+                  <div id="citytext4">
+                      <p>Spil Dağı,ismi Manisa ile özdeşleşen bir dağdır.Ünlü yaban atlarıyla beraber daha pek çok yaban hayvanına ev sahipliği yapmaktadır.</p>
+                      <p>Dağda en çok rastlayabileceğiniz bitki çeşidi,Osmanlı İmparatorluğu'nda İstanbul'a götürülerek bir döneme ismini nakşeden Manisa Laleleridir. Bu laleler Spil Dağı'nda koruma altına alınmıştır.</p>
+                      <p>Mesir Tabiat Parkı,Şehzadeler Parkı,Artemis Tapınağı,Sardes Antik Kenti ,Kurşunlu Kaplıcaları,Manisa Kalesi,Kula evleri,Kula Peribacaları,Urganlı Kaplıcaları,Süreyya Tabiat Parkı,Adala Kanyonu,
+                        Taşyaran vadisi gezilmesi gereken yerlerdir.</p>
+                      <p>ılın belli dönemlerinde Mesir Macunu Şenlikleri yapılmaktadır.</p>    
+                      <p>İçerisinde krık bir çeşit baharat ve şifalı ottan oluşan macun Yavuz Sultan Selim'in eşi
+                        hastalanınca başarılı hekim Merkezi Efendisi tarfından kullanılmıştır.Halk tarafından ilgi görülmeye başlanınca halka da dağıtılmıştır.                    
+                    </p>     
+                  </div>
+                        
+            </div>
+            <div class="col-6 " >
+                  <div id="cityimages4">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./sardes.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes2.jpg" class="d-block w-100" alt="https://tr.wikipedia.org/wiki/Sardis#/media/Dosya:Sardis_Synagogue,_late_3rd_century_AD,_Sardis,_Lydia,_Turkey_(18897218314).jpg">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./sardes4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                  </div>
+            </div>  
+          </div>
+    </div>
+</section>     
 
 
-
-
-
-	<script>
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  ".content").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  ".content").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };
-    </script>
-	
-	
-	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/MotionPathPlugin.min.js" integrity="sha512-18ec/gLWqRPNSLxTPUkRwrp3Ibf6w9ncyZKuRTKBUTJZqsPqy5F3mzaL1JZ/5kRIngztGxsmCFUsYtoJFz8uHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="app.js"></script>
-	<script src="app2.js"></script>
-	<script src="particles.js"></script>
-    <script src="appparticles.js"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/MotionPathPlugin.min.js" integrity="sha512-18ec/gLWqRPNSLxTPUkRwrp3Ibf6w9ncyZKuRTKBUTJZqsPqy5F3mzaL1JZ/5kRIngztGxsmCFUsYtoJFz8uHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="particles.js"></script>
+<script src="appparticles.js"></script>
+<script src="app.js"></script>
+</body>
 </html>
