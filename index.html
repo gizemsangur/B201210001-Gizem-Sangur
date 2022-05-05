@@ -36,13 +36,15 @@
 <section >
     <div class="container">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
-          
-            <div class="col-6 ">           
-                              
-            </div>
-            <div class="col-6 " id="form">
-              <form class="girisform" name="formgiris" action="giris.php" method="post">
+        
+        
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row" id="formsection">
+          <div class="col ">           
+                            
+          </div>
+          <div class="col " id="form">
+            <form class="girisform" name="formgiris" action="giris.php" method="post">
                 <div class="formborder">
                     <div class="mb-4">
                         <label for="formGroupExampleInput2" class="form-label">Email</label>
@@ -55,17 +57,11 @@
                         <button class="btn-primary" type="submit" value="Submit" onclick="checkEmail()">SUBMIT</button>							
                 </div>
             </form>	
-            </div>
-          
-          
-        </div>
-       
+          </div>
+          <div class="col">
 
-        
-          
-        
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-       
+          </div>
+        </div>
       </div>
 </section>     
 

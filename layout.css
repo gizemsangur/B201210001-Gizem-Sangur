@@ -2,7 +2,7 @@ html,body{
 	min-height: 100%;
 	max-width: 100%;
 	overflow-x: hidden;
-	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+	background-image: linear-gradient(to top, #fff1eb 0%, #b1f4cf 80%);
 	cursor: pointer;
   font-family: Bebas Neue;
 }
@@ -14,50 +14,9 @@ html,body{
 }
 
 
-#snackbar {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
-}
 
-/* Show the snackbar when clicking on a button (class added with JavaScript) */
-#snackbar.show {
-  visibility: visible; /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
-  However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
 
-/* Animations to fade the snackbar in and out */
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
 
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
 
 
 
@@ -77,33 +36,31 @@ html,body{
 	margin-top: 25%;
 }
 
-#citytext4{/*şehrim sayfasındaki dördüncü sayfada bilgilerin bulundu div id'si*/
-	text-align: center;
-	margin-top: 45%;
+
+
+
+
+.p1{
+  display: flex;
+  text-align: center;
+  margin-top: 25%;
+  font-size: 20vw;
+}
+
+#citytext{
+  margin-top: 25%;
+}
+#citytext2{
+  margin-top: 25%;
+}
+#citytext3{
+  margin-top: 35%;
+}
+#citytext4{
+  margin-top: 50%;
 }
 
 
-#citytext3{/*şehrim sayfasındaki üçüncü sayfada bilgilerin bulundu div id'si*/
-	text-align: center;
-	margin-top: 35%;
-}
-
-
-#citytext2{/*şehrim sayfasındaki ikinci sayfada bilgilerin bulundu div id'si*/
-	text-align: center;
-	margin-top: 25%;
-}
-
-
-#citytext{/*şehrim sayfasında resim ve bilgilerden ilk sayfanın bulunduğu div id'si */
-	text-align: center;
-	margin-top: 35%;
-}
-
-
-.girisform{/*giriş formu divi id'si*/
-	margin-top: 35%;
-}
 
 .iletisimform{/*iletişim formu divi id'si*/
 	margin-top: 30%;
@@ -132,10 +89,10 @@ html,body{
   
 
 #first_section{/* başlığı içinde bulunduran div id'si*/
-	position: relative;
+
   display: flex;
   justify-content: center;
-	height: 100vh;
+  height: 100vh;
 	text-align: center;
   }
   #first{ /*ilk sayfanın başlığının id'si*/
@@ -176,7 +133,7 @@ html,body{
 	top:0;
 	left:0;
 	height:8px;
-	background-image: linear-gradient(to right, #fff1eb 0%, #3e758f 100%);
+	background-image: linear-gradient(to right, #fff1eb 0%, #37855d 100%);
 	width:0%;
 	z-index:100;
 }
@@ -241,3 +198,28 @@ html,body{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+.girisform{
+  margin-top: 50%;
+}
+
+#svg{
+  display: flex;
+}
+
+
+.girl{
+  position: absolute;
+  height: 15vw;
+  top: 19vw;
+  left: 25vw;
+}
+
+
+.paper-plane{
+  position: relative;
+  height: 5vw;
+  top: 20vw;
+  left: 20vw;
+}
+

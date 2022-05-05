@@ -10,7 +10,7 @@
 		}else{
 			if($mail=='b201210001@sakarya.edu.tr'&&$password=='b201210001'){
 				session_start();
-				$_SESSION['mail']='b201210001@sakarya';
+				$_SESSION['mail']='b201210001@sakarya.edu.tr';
 				$_SESSION['password']='b201210001';
 				header("Location: giris2.html");
 				exit();
