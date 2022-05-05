@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="layout.scss">
     <link rel="stylesheet" href="layout.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    
+    <script>
+		function checkEmail() {
+			var x=document.forms["formgiris"]["mail"].value;
+			var y=document.forms["formgiris"]["password"].value;
+			var mail = document.getElementById('formGroupExampleInput2');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if(x==null||x==""){
+				alert("Lütfen e-mail adresinizi giriniz.");	
+				
+			if(y==null||y==""){
+				alert("Lütfen şifrenizi giriniz.");
+				return false;
+			}
+			}
+		}
+	
+	</script>
     <title>Document</title>
 </head>
 <body>
@@ -18,65 +37,35 @@
     <div class="container">
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                       
-                    </span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"  href="index.html">Hakkımda</a>
-                      </li>
-					  <li class="nav-item">
-                        <a class="nav-link" href="özgeçmiş.html">Özgeçmiş</a>  
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="İlgialanlarım.html">İlgi Alanlarım</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="sehrim.html">Şehrim</a>  
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"  href="mirasımız.html">Mirasımız</a>  
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="giris.html">Giriş</a>  
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="iletisim.html">İletişim</a>  
-                      </li>
-                     
-                    </ul>
-                    
-                  </div>
+          
+            <div class="col-6 ">           
+                              
+            </div>
+            <div class="col-6 " id="form">
+              <form class="girisform" name="formgiris" action="giris.php" method="post">
+                <div class="formborder">
+                    <div class="mb-4">
+                        <label for="formGroupExampleInput2" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email adresinizi giriniz" name="mail">
+                    </div>	
+                    <div class="mb-4">
+                        <label for="formGroupExampleInput2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Şifrenizi giriniz" name="password">
+                    </div>
+                        <button class="btn-primary" type="submit" value="Submit" onclick="checkEmail()">SUBMIT</button>							
                 </div>
-              </nav>
+            </form>	
+            </div>
+          
+          
         </div>
        
 
         
-          <div class="row" id="first_section">
-            <div class="col-12" >
-              <div id="particles-js">
-                <p id="first">HAKKIMDA</p> 
-              </div>
-                  
-             </div>
-         </div>
+          
         
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row" id="text">
-          <div class="col-6 ">           
-              <p class="miras" >
-               
-            </p>                
-          </div>
-          <div class="col-6 " id="images">
-            
-        </div>
+       
       </div>
 </section>     
 
