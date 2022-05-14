@@ -149,7 +149,24 @@
                   </div>
                   <div class="mb-4">
                     <label for="exampleFormControlTextarea1" class="form-label">Mesajınız</label>
-                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="İletmek istediğiniz mesajınızı giriniz." name="message"></textarea>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="İletmek istediğiniz mesajınızı giriniz." name="message"></textarea> 
+                  </div>
+                  <div class="mb-4">
+                    <label for="cars">Cinsiyetiniz:</label><br>
+                    <form>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="kadın">Kadın</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="erkek">Erkek</label><br>
+                    </form>
+                  </div>
+                  <div class="mb-4">
+                    <label for="cars">İletişim sebebiniz:</label>
+                    <select id="cars" name="contact_reason">
+                      <option value="yorum ve öneri">Yorum ve Öneri</option>
+                      <option value="teknik yardım">Teknik Yardım</option>
+                      <option value="diger">Diğer</option>
+                    </select>
                   </div>
                   <button class="btn-primary" type="submit" value="Submit"  onclick="checkEmail()"id="submitbtn" >SUBMIT</button>
                   <button class="btn-primary" type="reset" value="Reset" >RESET</button>
